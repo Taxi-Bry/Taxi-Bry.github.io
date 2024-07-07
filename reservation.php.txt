@@ -1,0 +1,14 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = htmlspecialchars($_POST['name']);
+    $phone = htmlspecialchars($_POST['phone']);
+    $pickup = htmlspecialchars($_POST['pickup']);
+    $destination = htmlspecialchars($_POST['destination']);
+    $date = htmlspecialchars($_POST['date']);
+
+    // Vous pouvez ensuite traiter les données, par exemple en les enregistrant dans une base de données
+    // ou en les envoyant par email
+
+    echo "Merci $name, votre réservation a été prise en compte.";
+}
+?>
